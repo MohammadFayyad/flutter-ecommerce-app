@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:ecommerce_app/features/home_page_screen/models/rating.dart';
 
-List<ProductModel> productModelFromJson(str) {
+List<ProductModel> productModelFromJson(List<dynamic> str) {
   List<ProductModel> productsList = List<ProductModel>.from(
     str.map((mapOfProduct) => ProductModel.fromMap(mapOfProduct)),
   );

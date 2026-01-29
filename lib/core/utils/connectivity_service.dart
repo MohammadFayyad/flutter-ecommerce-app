@@ -37,7 +37,6 @@ class ConnectivityCubit extends Cubit<ConnectivityState> {
   ConnectivityCubit(this.service) : super(const ConnectivityState(true)) {
     _subscription = service.status.listen(_onStatusChanged);
   }
-
   final NetworkService service;
   late final StreamSubscription<bool> _subscription;
 
