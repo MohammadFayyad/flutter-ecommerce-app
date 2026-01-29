@@ -4,18 +4,27 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class NetworkService {
-  NetworkService(this.connectivity);
-  final Connectivity connectivity;
+  NetworkService(this._connectivity);
+
+  final Connectivity _connectivity;
+
   Stream<bool> get status async* {
     yield await isConnected();
-    yield* connectivity.onConnectivityChanged.map(
-      (result) => result != ConnectivityResult.none,
-    );
+    yield* _connectivity.onConnectivityChanged.map(_mapResultsToStatus);
   }
 
   Future<bool> isConnected() async {
-    final result = await connectivity.checkConnectivity();
-    return result != ConnectivityResult.none;
+    final results = await _connectivity.checkConnectivity();
+    return _mapResultsToStatus(results);
+  }
+
+  bool _mapResultsToStatus(List<ConnectivityResult> results) {
+    return results.any(
+      (r) =>
+          r == ConnectivityResult.mobile ||
+          r == ConnectivityResult.wifi ||
+          r == ConnectivityResult.ethernet,
+    );
   }
 }
 
@@ -28,8 +37,10 @@ class ConnectivityCubit extends Cubit<ConnectivityState> {
   ConnectivityCubit(this.service) : super(const ConnectivityState(true)) {
     _subscription = service.status.listen(_onStatusChanged);
   }
+
   final NetworkService service;
   late final StreamSubscription<bool> _subscription;
+
   void _onStatusChanged(bool isOnline) {
     if (isClosed) return;
     emit(ConnectivityState(isOnline));
