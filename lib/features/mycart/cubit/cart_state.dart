@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/features/my_cart/models/cart_model.dart';
+import 'package:ecommerce_app/features/mycart/models/cart_model.dart';
 
 abstract class CartState {
   final bool isAdded;

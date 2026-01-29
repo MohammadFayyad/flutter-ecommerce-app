@@ -10,9 +10,9 @@ import 'package:ecommerce_app/features/auth/repo/auth_repo.dart';
 import 'package:ecommerce_app/features/home_page_screen/cubit/categories_cubit.dart';
 import 'package:ecommerce_app/features/home_page_screen/cubit/product_cubit.dart';
 import 'package:ecommerce_app/features/home_page_screen/repo/home_repo.dart';
-import 'package:ecommerce_app/features/my_cart/cubit/cart_cubit.dart';
-import 'package:ecommerce_app/features/my_cart/cubit/my_cart_cubit.dart';
-import 'package:ecommerce_app/features/my_cart/repo/cart_repo.dart';
+import 'package:ecommerce_app/features/mycart/cubit/cart_cubit.dart';
+import 'package:ecommerce_app/features/mycart/cubit/my_cart_cubit.dart';
+import 'package:ecommerce_app/features/mycart/repo/cart_repo.dart';
 import 'package:get_it/get_it.dart';
 
 GetIt sl = GetIt.instance;
