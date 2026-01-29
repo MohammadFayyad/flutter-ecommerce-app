@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:ecommerce_app/core/networking/api_endpoints.dart';
 import 'package:ecommerce_app/core/networking/dio_helper.dart';
-import 'package:ecommerce_app/features/mycart/models/cart_model.dart';
+import 'package:ecommerce_app/features/my_cart/models/cart_model.dart';
 
 class CartRepo {
   final DioHelper dioHelper;

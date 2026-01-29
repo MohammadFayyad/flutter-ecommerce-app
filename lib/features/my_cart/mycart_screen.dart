@@ -2,9 +2,9 @@ import 'package:ecommerce_app/core/style/app_colors.dart';
 import 'package:ecommerce_app/core/widgets/cart_item.dart';
 import 'package:ecommerce_app/core/widgets/loading_widget.dart';
 import 'package:ecommerce_app/core/widgets/primary_button_widget.dart';
-import 'package:ecommerce_app/features/mycart/cart_summary.dart';
-import 'package:ecommerce_app/features/mycart/cubit/my_cart_cubit.dart';
-import 'package:ecommerce_app/features/mycart/cubit/my_cart_state.dart';
+import 'package:ecommerce_app/features/my_cart/cart_summary.dart';
+import 'package:ecommerce_app/features/my_cart/cubit/my_cart_cubit.dart';
+import 'package:ecommerce_app/features/my_cart/cubit/my_cart_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -55,7 +55,7 @@ class MyCartScreen extends StatelessWidget {
                 Expanded(
                   child: ListView.separated(
                     itemCount: cart.items.length,
-                    separatorBuilder: (_, __) => SizedBox(height: 16.h),
+                    separatorBuilder: (_, _) => SizedBox(height: 16.h),
                     itemBuilder: (context, index) {
                       return CartItem(item: cart.items[index]);
                     },

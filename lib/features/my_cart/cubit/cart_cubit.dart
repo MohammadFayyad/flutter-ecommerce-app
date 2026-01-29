@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce_app/features/mycart/cubit/cart_state.dart';
-import 'package:ecommerce_app/features/mycart/models/cart_model.dart';
-import 'package:ecommerce_app/features/mycart/repo/cart_repo.dart';
+import 'package:ecommerce_app/features/my_cart/cubit/cart_state.dart';
+import 'package:ecommerce_app/features/my_cart/models/cart_model.dart';
+import 'package:ecommerce_app/features/my_cart/repo/cart_repo.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CartCubit extends Cubit<CartState> {

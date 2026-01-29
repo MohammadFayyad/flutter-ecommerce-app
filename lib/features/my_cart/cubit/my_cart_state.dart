@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/features/mycart/models/cart_item_model.dart';
+import 'package:ecommerce_app/features/my_cart/models/cart_item_model.dart';
 
 abstract class MyCartState {}
 
