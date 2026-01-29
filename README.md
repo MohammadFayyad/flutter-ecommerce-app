@@ -20,7 +20,6 @@ Designed for extensibility and real-world scale, it’s the perfect foundation f
 - 📍 Address management
 - 🎨 Responsive, adaptive UI
 - ⚡️ Fast, smooth navigation
-- 🌙 Dark mode support
 - 🔄 Robust state management (BLoC/Cubit)
 - 🧩 Modular, testable codebase
 - 📱 Multi-platform: Android, iOS, Web, Desktop
