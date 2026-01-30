@@ -1,3 +1,4 @@
+[![Flutter CI](https://github.com/MohammadFayyad/flutter-ecommerce-app/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/MohammadFayyad/flutter-ecommerce-app/actions/workflows/main.yml)
 # 🚀 E-Commerce App
 
 A modern, scalable, and production-ready Flutter e-commerce application.  
