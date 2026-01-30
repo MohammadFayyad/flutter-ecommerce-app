@@ -1,5 +1,3 @@
-![Flutter CI](https://github.com/MohammadFayyad/flutter-ecommerce-app/actions/workflows/flutter_ci.yml/badge.svg)
-
 # 🚀 E-Commerce App
 
 A modern, scalable, and production-ready Flutter e-commerce application.  
