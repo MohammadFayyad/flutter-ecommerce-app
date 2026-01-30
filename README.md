@@ -87,16 +87,6 @@ test/           # Unit & widget tests
 
 ---
 
-## 🖼️ Screenshots
-
-| Home                                 | Product Details                            | Cart                                 | Profile                                    |
-| ------------------------------------ | ------------------------------------------ | ------------------------------------ | ------------------------------------------ |
-| ![Home](assets/screenshots/home.png) | ![Product](assets/screenshots/product.png) | ![Cart](assets/screenshots/cart.png) | ![Profile](assets/screenshots/profile.png) |
-
-> _Replace these with real screenshots from your app._
-
----
-
 ## 🚀 Performance & Best Practices
 
 - Uses `BlocSelector` and `buildWhen` to minimize unnecessary widget rebuilds
