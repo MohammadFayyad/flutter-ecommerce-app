@@ -1,3 +1,5 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:ecommerce_app/core/widgets/loading_widget.dart';
 import 'package:ecommerce_app/features/my_cart/cubit/my_cart_cubit.dart';
 import 'package:ecommerce_app/features/my_cart/models/cart_item_model.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,14 @@ class CartItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Image.network(item.image, width: 80, height: 80, fit: BoxFit.cover),
+        CachedNetworkImage(
+          placeholder: (context, url) => const Center(child: LoadingWidget()),
+          errorWidget: (context, url, error) => const Icon(Icons.error),
+          imageUrl: item.image,
+          width: 80,
+          height: 80,
+          fit: BoxFit.cover,
+        ),
         const SizedBox(width: 12),
 
         Expanded(
