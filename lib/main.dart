@@ -10,6 +10,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupServiceLocator();
   isLoggedIn = await sl<AuthLocalDataSource>().isLoggedIn();
+
   runApp(MyApp(isLoggedIn: isLoggedIn));
 }
 
